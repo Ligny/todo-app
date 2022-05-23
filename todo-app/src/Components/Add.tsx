@@ -2,6 +2,8 @@ import React from "react";
 
 import { AddProps } from "../Types/types";
 
+import { ReactComponent as PlusIcon } from "../assets/svg/plus.svg"
+
 const Add = ({
   handleChange,
   handleSubmit,
@@ -21,9 +23,8 @@ const Add = ({
     <button
       type={"submit"}
       aria-label={"Add todo"}
-      className={"h-7 w-7 flex justify-center items-center bg-red-400 hover:bg-red-500 text-white font-bold  rounded"}
     >
-      ADD
+      <PlusIcon />
     </button>
   </form>
 )
